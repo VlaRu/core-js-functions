@@ -73,7 +73,7 @@ function getArgumentsCount(funcs) {
  *
  */
 function getPowerFunction(exponent) {
-  return function (baseNum) {
+  return (baseNum) => {
     return baseNum ** exponent;
   };
 }
@@ -150,7 +150,7 @@ function retry(func, attempts) {
       try {
         return func(...args);
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     }
     return undefined;
